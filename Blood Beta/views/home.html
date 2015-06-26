@@ -1,0 +1,197 @@
+<!--Login View Layout-->
+<div data-role="view" id="loginView" data-model="app.login" data-show="app.login.show">
+    <div data-role="content">
+        <div class="content">
+            <div class="logo"></div>
+            <div id="login_frm" class="frm">
+                <p>
+                    <input type="text" name="loginUsername" id="loginUsername" data-bind="value:loginUsername" placeholder="Username" class="txtfld" />
+                </p>
+                <p>
+                    <input type="password" name="loginPassword" id="loginPassword" data-bind="value:loginPassword" placeholder="Password" class="txtfld" />
+                </p>
+            </div>
+            <div class="ftr">
+                <p>
+                    <a data-role="button" id="login" class="logbtn" data-bind="click:loginSubmit">Sign In</a>
+                </p>
+                <p>
+                    <a href="#signup-view">New User...</a>
+                </p>
+                <p>
+                    <a href="#forgot-pwd">Forgot Password</a>
+                </p>
+                <div class="line">
+                    <img src="style/images/line.png" />
+                </div>
+                <div class="logfb">
+                    <a data-role="button">Signup with Facebook</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Forgot Password Layout-->
+<div data-role="view" id="forgot-pwd">
+    <div data-role="content">
+        <div class="content">
+            <div class="logo-txt">
+                <p>
+                    <span>Forgot Password</span>
+                </p>
+            </div>
+            <div class="forgot-frm">
+                <p>
+                    <span>
+                        Enter the email address associated with your account.
+                    </span>
+                </p>
+                <p>
+                    <input type="text" name="forgot-password" id="forgot-password" placeholder="Email Address" class="txtfld" />
+                </p>
+                <p>
+                    <a data-role="button" href="#loginView" class="forgot-btn">CANCEL</a>
+                    <a data-role="button" class="forgot-btnActive">SUBMIT</a>
+                </p>
+            </div>
+            <div class="forgot-ftr">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Registration Layout-->
+<div data-role="view" id="signup-view" data-model="app.signup" data-show="app.signup.show" data-use-native-scrolling="true">
+    <div data-role="content">
+        <div class="content">
+            <div class="logo-txt">
+                <p>
+                    <span>SIGN UP</span>
+                </p>
+            </div>
+            <!--<div class="imageUploadDV">
+                <p>
+                    <span>
+                        It's Free and take less than 1 minutes.
+                    </span>
+                </p>
+                <p>
+                    <a data-role="button" id="dftbtn" class="defaultImg removeBtn" data-bind="click:captureCameraEvent">
+                        <img id="defaultImgBtn" src="style/images/profile icon.PNG" />
+                    </a>
+                </p>
+                <p>
+                    <a data-role="button" id="updbtn" class="defaultImg removeBtn" data-bind="click:deleteCameraEvent">
+                        <img id="uploadimgbtn" src="style/images/profile icon.PNG" />
+                    </a>
+                </p>
+            </div>-->
+            <div id="signup_form" class="signup-frm">
+                <p>
+                    <img id="uploadimgbtn" src="style/images/profile icon.PNG" style="width:100px;height:100px;border-radius:50%"/>
+                </p>
+                <p>
+                    <input type="text" name="signupUsername" data-bind="value:signupUsername" id="signupUsername" placeholder="Full Name" class="txtfld" />
+                </p>
+                <p>
+                    <input type="text" name="signupEmailAddress" id="signupEmailAddress" data-bind="value:signupEmailAddress" placeholder="Email Address" class="txtfld" />
+                </p>
+                <p>
+                    <input type="password" name="signupPassword" id="signupPassword" data-bind="value:signupPassword" placeholder="Password" class="txtfld" />
+                </p>
+                <p>
+                    <input type="number" name="signupContact" id="signupContact" data-bind="value:signupContact" placeholder="Mobile Number" class="txtfld" />
+                </p>
+                <p>
+                    <!--<input id="dob_donnar" data-bind="value:dob"/>-->
+                    <select id="signupDob" data-bind="value:signupDob" class="txtfld">
+                        <option value="0" selected="selected">Your Age</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="40 above">40 Above</option>
+                    </select>
+                </p>
+                <p>
+                    <select id="signupState" class="txtfld" data-bind="value:signupState" onchange="searchCity(this.value,'')">
+                        <option value="0">Select State</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    </select>
+                </p>
+                <p>
+                    <select id="signupCity" class="txtfld" data-bind="value:signupCity">
+                        <option value="0" selected>Select City</option>
+                    </select>
+                </p>
+                <p>
+                    <input type="text" name="signupArea" id="signupArea" data-bind="value:signupArea" placeholder="Area" class="txtfld" />
+                </p>
+                <p>
+                    <select id="signupGroup" class="txtfld" data-bind="value:signupGroup">
+                        <option value="0">Blood Group</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                    </select>
+                </p>
+            </div>
+            <div class="signup-ftr">
+                <p>
+                    <a data-role="button" href="#loginView" class="signup-btn">CANCEL</a>
+                    <a data-role="button" data-bind="click:signupSubmit" class="signup-btnActive">SUBMIT</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function searchCity(value, nod) {
+        var dataSource = new kendo.data.DataSource({
+            transport: {
+                read: {
+                    url: 'script/data/city.json',
+                    type: "GET",
+                    dataType: 'json'
+                }
+            },
+            filter: { field: "state_id", operator: "eq", value: value }
+        });
+        dataSource.fetch(function () {
+            var view = dataSource.view().sort();
+            var html = '<option value="0" selected="selected">Select City</option>';
+            $.each(view, function (index, value) {
+                html += '<option value="' + value['pid'] + '">' + value['city'] + '</option>';
+            });
+
+            $('#signupCity').html(html);
+        });
+    }
+</script>

@@ -1,0 +1,13 @@
+
+.content{ width:90%;margin:0px auto;}
+#loginView .logo {width:120px;height:100px;margin:0px auto;background:url('images/blood beta.png') no-repeat ;background-size:100% 100%;margin-top:10%}
+
+/*forgot password*/
+#forgot-pwd .forgot-frm .forgot-btn,#signup-view .signup-ftr .signup-btn {width:48%;background-color:#EEEEEE;border:1px solid #CBCAC8;color:#000;font-family:'Times New Roman', Times, serif;}
+#forgot-pwd .forgot-frm .forgot-btn:active,#signup-view .signup-ftr .signup-btn:active {color:#000}
+#forgot-pwd .forgot-frm .forgot-btnActive,#signup-view .signup-ftr .signup-btnActive {width:48%;background-color:#CD070F;border:1px solid #CBCAC8;color:#fff;font-family:'Times New Roman', Times, serif}
+#forgot-pwd .forgot-frm .forgot-btnActive:active, #signup-view .signup-frm .signup-btnActive:active {color:#fff}
+.removeBtn {border: none !important;background: none !important;}
+.nvbar {background-color:#CD070F !important;height:52px !important}
+.settitle {color:#FFF !important;line-height: 50px;font-weight: bold;font-family:'Times New Roman', Times, serif}
+.km-group-title {background-color:#E2E2E2 !important;height:40px !important;}

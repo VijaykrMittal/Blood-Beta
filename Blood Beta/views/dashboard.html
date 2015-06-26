@@ -1,0 +1,95 @@
+<div data-role="view" id="dashboard-view" data-layout="default-layout" data-title="Blood Beta" data-model="app.dashboard" data-show="app.dashboard.show" data-use-native-scrolling="true">
+    <div data-role="content">
+        <div class="dash-content">
+            <ul data-role="listview" data-template="customListViewTemplate" id="donnar-list"></ul>
+        </div>
+    </div>
+</div>
+
+
+<!--Donnar All Detail-->
+<div data-role="view" id="donnar-detail" data-init="getDataList" data-transition="zoom">
+    <div data-role="content">
+        <div class="detail-content">
+            <div class="profileimg">
+                <img src="../style/images/profile icon.PNG" />
+            </div>
+            <div class="donnar-data">
+                <table id="donnarDataList" width="90%" align="center" border="0" cellpadding="10" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td align="left" valign="top" width="40%">Name</td>
+                            <td width="60%" align="center" valign="top">Arya Kumar</td>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top" width="40%">Group</td>
+                            <td width="60%" valign="top" align="center">My Group</td>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top" width="40%">Email</td>
+                            <td width="60%" valign="top" align="center">aryakumar@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top" width="40%">Contact</td>
+                            <td width="60%" valign="top" align="center">8812345678</td>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top" width="40%">Address</td>
+                            <td width="60%" valign="top" align="center"><span>A-83 sector 2 noida U.P</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="donnar-ftr">
+                <p>
+                    <a data-role="backbutton">SMS</a>
+                    <a data-role="button">Call</a>
+                    <a data-role="button" disabled>Chat</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/x-kendo-template" id="customListViewTemplate">
+    # var url = data['url'] #
+    <div class="tempDiv">
+        <div class="imgdiv">
+            #if(url === "style/images/profile icon.PNG"){#
+                <p><img class="item-photo" src="${url}" /></p>
+            #}else{#
+                <p><img class="item-photo" src="data:image/png;base64,${url}" /></p>
+            #}#
+        </div>
+        <div class="txtcont">
+            <span style="line-height: 45px;margin-left: -10px;font-weight: bold;text-transform: capitalize;font-size:15px" class="item-title">${name}</span>
+            <br/>
+            <span style="fonr-size:13px;position:absolute;top:64px;left: 106px;">Group : <span style="font-weight:bold;font-size:12px;text-transform: capitalize;"> ${group}</span></span>
+        </div>
+        <a data-role="button" data-click="check" class="details-link">View</a>
+                
+        
+                    
+    </div>
+</script>
+
+<!--Drawer for dashboard
+<div data-role="drawer" id="donnar-drawer" data-model="app.dashboardService.viewModel">
+    <ul data-role="listview">
+        <li >
+            <div class="profileblk">
+                <div class="imgdv">
+                    <img src="../style/images/drawer_prof.png" width="100%" height="100%" />
+                </div>
+                <p>Hello Test Domain</p>
+            </div>
+            
+        </li>
+        <li data-bind="click:viewToHome"><label><img src='../style/images/home.png' class="imglogo" /><span class="spanTxt">Home</span></label></li>
+        <li data-bind="click:viewToSearchDonnar"><label><img src='../style/images/search.png' class="imglogo" /><span class="spanTxt">Search Donnar</span></label></li>
+        <li data-bind="click:viewToProfile"><label><img src='../style/images/profile.png' class="imglogo" /><span class="spanTxt">My profile</span></label></li>
+        <li data-bind="click:viewToAbout"><label><img src='../style/images/info.png' class="imglogo" /><span class="spanTxt">About</span></label></li>
+        <li data-bind="click:viewToSignout"><label><img src='../style/images/sign out.png' class="imglogo" /><span class="spanTxt">Sign Out</span></label></li>
+    </ul>
+</div>
+-->
