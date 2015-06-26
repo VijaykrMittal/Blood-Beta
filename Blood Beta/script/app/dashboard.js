@@ -35,7 +35,7 @@ app.dashboard = (function(){
             console.log(donnarData);
             
             $("#donnar-list").kendoMobileListView({
-                dataSource: kendo.data.DataSource.create({data: donnarData,group: "letter"}),
+                dataSource: kendo.data.DataSource.create({data: donnarData}),
                 template: $("#customListViewTemplate").html()
             });
             app.mobileApp.hideLoading();
