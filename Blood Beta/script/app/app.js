@@ -73,8 +73,7 @@ var app = (function(global){
     var apps = new kendo.mobile.Application(document.body,
                                                         {
                                                             skin:'flat',
-                                                            initial:'views/dashboard.html',
-                                                            transition:'fade'
+                                                            initial:'views/home.html'
                                                         }
     );
     return{

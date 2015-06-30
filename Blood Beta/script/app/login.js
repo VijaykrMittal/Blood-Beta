@@ -9,6 +9,7 @@ app.login = (function () {
 
         var show = function ()
         {
+            //app.mobileApp.showLoading();
             loginBindingValue = kendo.observable({
                 loginUsername: '',
                 loginPassword:''
@@ -113,10 +114,22 @@ app.login = (function () {
                 }
             });*/
         };
+        
+        var navigateToSignup = function()
+        {
+            app.mobileApp.navigate("#signup-view");
+        };
+        
+        var navigateToForgot = function()
+        {
+            app.mobileApp.navigate("#forgot-pwd");
+        };
 
         return {
             show: show,
-            loginSubmit: loginSubmit
+            loginSubmit: loginSubmit,
+            navigateToSignup:navigateToSignup,
+            navigateToForgot:navigateToForgot
         };
     }());
     return loginViewModel;

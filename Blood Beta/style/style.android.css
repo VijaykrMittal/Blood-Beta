@@ -36,6 +36,62 @@ body {
 
 @media (min-width:0px) and (max-width:440px) {
     
+    /*LOGIN*/
+    
+    #loginView .frm {width:100%;height:auto;margin-top:8%}
+    #loginView .frm .txtfld, #forgot-pwd .forgot-frm .txtfld, #signup-view .signup-frm .txtfld {width:100%;height:40px;padding-left:7px;border:1px solid #ccc;}
+   
+    #loginView .ftr {width:100%;height:auto;margin-top:5%}
+    #loginView .ftr .logbtn {width:100%;height:40px;font-size:18px;line-height:18px;background:#CD070F;color:#ffffff;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif}
+    #loginView .ftr .logbtn:active{background:#CD070F}
+    #loginView .ftr p:nth-child(2) {float:left;margin-left:20px;}
+    #loginView .ftr p:nth-child(2) a {text-decoration:none;font-family:'Times New Roman';font-size:15px}
+    #loginView .ftr p:nth-child(3) {float:right}
+    #loginView .ftr p:nth-child(3) a {text-decoration:none;font-family:'Times New Roman';font-size:15px}
+    #loginView .ftr .line {width:100%;margin-top:38%}
+    #loginView .ftr .line img {width:100%}
+    #loginView .ftr .logfb {width:92%;margin:0px auto;margin-top:30%}
+    #loginView .ftr .logfb a {width:100%;height:42px;line-height:18px;background:#3b5998;color:#ffffff;font-size:20px;font-family:'Browallia New'}
+    
+    /*FORGOT PASSWORD*/
+    #forgot-pwd .forgot-frm {width:100%;height:auto;margin-top:10%;margin-bottom:26%}
+    #forgot-pwd .forgot-frm p:nth-child(1) {text-align:center;font-size:14px;}
+    #forgot-pwd .forgot-frm p:nth-child(2),#forgot-pwd .forgot-frm p:nth-child(3) {margin-top:10%}
+    #forgot-pwd .logo-txt {width:100%;margin-top:30%}
+    #forgot-pwd .logo-txt p {text-align:center;}
+    #forgot-pwd .logo-txt p span {font-size:25px;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
+    #forgot-pwd .forgot-ftr {width:100%;margin:0px auto;}
+    #forgot-pwd .forgot-ftr p {text-align:center}
+    #forgot-pwd .forgot-ftr img {width:160px;}
+    
+    /*Registration*/
+    #signup-view .signup-frm {width:100%;height:auto;}
+    #signup-view .logo-txt {width:100%;margin-top:10%}
+    #signup-view .logo-txt p:nth-child(2) {text-align:center}
+    #signup-view .logo-txt p:nth-child(2) span {font-size:15px;}
+    #signup-view .signup-frm p:nth-child(1) {text-align:center}
+    #signup-view .logo-txt p {text-align:center}
+    #signup-view .logo-txt p span {font-size: 25px;margin-left: 7px;font-family:'Times New Roman', Times, serif, Arial, sans-serif}
+    .defaultImg {width:120px;height:115px;border-radius:50%;}
+    .defaultImg img {width:100%;height:100%;border-radius:50%;}
+    #updbtn {display:none}
+    .imageUploadDV p {text-align:center}
+    .imageUploadDV p:nth-child(1) {font-size:14px;}
+    
+    #dashboard-view .dash-content {width:100%}
+    .tempDiv {padding:15px 10px}
+    .tempDiv .imgdiv {width:100px;float:left;margin-left: -25px;margin-top: -14px;margin-right:22px}
+    .tempDiv .imgdiv p .item-photo {width:85px;height:85px;border-radius:100%}
+    .tempDiv .txtcont {margin-left:25px;}
+    .tempDiv .txtcont p {font-size: 15px;text-align: left;margin-top: 20px;width: 90%;}
+    .tempDiv a {position: absolute;top: 44px;right: 7px;background:#FF8080 !important;color:#fff;font-family:Arial, Helvetica, sans-serif;box-shadow:0px 0px 0px 0px #ccc}
+
+    /*#donnar-list li:nth-child(odd) {background:#FFEBEB !important;border-bottom:1px solid #CCC}*/
+    #donnar-list li:nth-child(odd) {background:#FFEBEB !important;border-bottom:1px solid #CCC}
+    #donnar-list li:nth-child(even) {background:#fff;border-bottom:1px solid #CCC}
+    
+    /*Loader*/
+    .km-loader .km-loading{animation: km-spin 1s infinite linear;-webkit-animation: km-spin 1s infinite linear;display: block;margin: 0 auto;background-color: #fff !important;width: 62px;height: 62px;border-radius: 50%;}
 }
 
 @media (min-width:0px) and (max-width:410px) {

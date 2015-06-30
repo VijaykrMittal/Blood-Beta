@@ -7,10 +7,10 @@ app.signup = (function () {
 
         var bindingValue;
 
-        var show = function ()
+        var show = function (e)
         {
+          //  $(".km-scroll-container").css("-webkit-transform", "");
             $('#signupCity').val(0);
-            $(".km-scroll-container").css("-webkit-transform", "");
             
             bindingValue = kendo.observable({
                 signupUsername: '',
@@ -32,6 +32,7 @@ app.signup = (function () {
                 window.cameraInfo.capturePhoto();
             });
             $('#uploadimgbtn').attr("src",'style/images/profile icon.PNG');
+            e.view.scroller.scrollTo(0, 0)
         };
 
         var signupSubmit = function ()

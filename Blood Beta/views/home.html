@@ -16,10 +16,10 @@
                     <a data-role="button" id="login" class="logbtn" data-bind="click:loginSubmit">Sign In</a>
                 </p>
                 <p>
-                    <a href="#signup-view">New User...</a>
+                    <a data-bind="click:navigateToSignup">New User...</a>
                 </p>
                 <p>
-                    <a href="#forgot-pwd">Forgot Password</a>
+                    <a data-bind="click:navigateToForgot">Forgot Password</a>
                 </p>
                 <div class="line">
                     <img src="style/images/line.png" />
@@ -33,7 +33,7 @@
 </div>
 
 <!--Forgot Password Layout-->
-<div data-role="view" id="forgot-pwd">
+<div data-role="view" id="forgot-pwd" data-transition="overlay">
     <div data-role="content">
         <div class="content">
             <div class="logo-txt">
@@ -51,23 +51,31 @@
                     <input type="text" name="forgot-password" id="forgot-password" placeholder="Email Address" class="txtfld" />
                 </p>
                 <p>
-                    <a data-role="button" href="#loginView" class="forgot-btn">CANCEL</a>
+                    <a data-role="backbutton" class="forgot-btn">CANCEL</a>
                     <a data-role="button" class="forgot-btnActive">SUBMIT</a>
                 </p>
             </div>
             <div class="forgot-ftr">
+                <p>
+                    <img src="style/images/forgot.png"/>
+                </p>
             </div>
         </div>
     </div>
 </div>
 
 <!--Registration Layout-->
-<div data-role="view" id="signup-view" data-model="app.signup" data-show="app.signup.show" data-use-native-scrolling="true">
+<div data-role="view" id="signup-view" data-model="app.signup" data-show="app.signup.show" data-use-native-scrolling="true" data-transition="overlay:right">
     <div data-role="content">
         <div class="content">
             <div class="logo-txt">
                 <p>
                     <span>SIGN UP</span>
+                </p>
+                <p>
+                    <span>
+                        It's Free and take less than 1 minutes.
+                    </span>
                 </p>
             </div>
             <!--<div class="imageUploadDV">
@@ -164,7 +172,7 @@
             </div>
             <div class="signup-ftr">
                 <p>
-                    <a data-role="button" href="#loginView" class="signup-btn">CANCEL</a>
+                    <a data-role="backbutton" class="signup-btn">CANCEL</a>
                     <a data-role="button" data-bind="click:signupSubmit" class="signup-btnActive">SUBMIT</a>
                 </p>
             </div>
