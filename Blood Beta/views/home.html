@@ -33,7 +33,7 @@
 </div>
 
 <!--Forgot Password Layout-->
-<div data-role="view" id="forgot-pwd" data-transition="overlay">
+<div data-role="view" id="forgot-pwd" data-transition="overlay" data-model="app.login" data-show="app.login.show">
     <div data-role="content">
         <div class="content">
             <div class="logo-txt">
@@ -41,21 +41,21 @@
                     <span>Forgot Password</span>
                 </p>
             </div>
-            <div class="forgot-frm">
+            <div id="forgot_frm" class="forgot-frm">
                 <p>
                     <span>
                         Enter the email address associated with your account.
                     </span>
                 </p>
                 <p>
-                    <input type="text" name="forgot-password" id="forgot-password" placeholder="Email Address" class="txtfld" />
-                </p>
-                <p>
-                    <a data-role="backbutton" class="forgot-btn">CANCEL</a>
-                    <a data-role="button" class="forgot-btnActive">SUBMIT</a>
+                    <input type="text" name="forgot-password" data-bind="value:forgotPassword" id="forgot-password" placeholder="Email Address" class="txtfld" />
                 </p>
             </div>
             <div class="forgot-ftr">
+                <p>
+                    <a data-role="backbutton" class="forgot-btn">CANCEL</a>
+                    <a data-role="button" data-click="app.login.forgotSubmit" class="forgot-btnActive">SUBMIT</a>
+                </p>
                 <p>
                     <img src="style/images/forgot.png"/>
                 </p>
@@ -109,7 +109,7 @@
                     <input type="password" name="signupPassword" id="signupPassword" data-bind="value:signupPassword" placeholder="Password" class="txtfld" />
                 </p>
                 <p>
-                    <input type="number" name="signupContact" id="signupContact" data-bind="value:signupContact" placeholder="Mobile Number" class="txtfld" />
+                    <input type="number" name="signupContact" id="signupContact" maxlength="10" data-bind="value:signupContact" placeholder="Mobile Number" class="txtfld" />
                 </p>
                 <p>
                     <!--<input id="dob_donnar" data-bind="value:dob"/>-->

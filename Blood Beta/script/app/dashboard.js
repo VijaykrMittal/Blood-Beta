@@ -41,8 +41,14 @@ app.dashboard = (function(){
             app.mobileApp.hideLoading();
         };
         
+        var logout = function()
+        {
+            
+        };
+        
         return {
-          show:show  
+          show:show,
+            logout:logout
         };
     }());
     return dashboardViewModel;

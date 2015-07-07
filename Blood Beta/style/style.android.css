@@ -54,7 +54,7 @@ body {
     #loginView .ftr .logfb a {width:100%;height:42px;line-height:18px;background:#3b5998;color:#ffffff;font-size:20px;font-family:'Browallia New'}
     
     /*FORGOT PASSWORD*/
-    #forgot-pwd .forgot-frm {width:100%;height:auto;margin-top:10%;margin-bottom:26%}
+    #forgot-pwd .forgot-frm {width:100%;height:auto;margin-top:10%;margin-bottom:10%}
     #forgot-pwd .forgot-frm p:nth-child(1) {text-align:center;font-size:14px;}
     #forgot-pwd .forgot-frm p:nth-child(2),#forgot-pwd .forgot-frm p:nth-child(3) {margin-top:10%}
     #forgot-pwd .logo-txt {width:100%;margin-top:30%}
@@ -62,7 +62,7 @@ body {
     #forgot-pwd .logo-txt p span {font-size:25px;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
     #forgot-pwd .forgot-ftr {width:100%;margin:0px auto;}
     #forgot-pwd .forgot-ftr p {text-align:center}
-    #forgot-pwd .forgot-ftr img {width:160px;}
+    #forgot-pwd .forgot-ftr img {width:190px;}
     
     /*Registration*/
     #signup-view .signup-frm {width:100%;height:auto;}
@@ -89,10 +89,7 @@ body {
     /*#donnar-list li:nth-child(odd) {background:#FFEBEB !important;border-bottom:1px solid #CCC}*/
     #donnar-list li:nth-child(odd) {background:#FFEBEB !important;border-bottom:1px solid #CCC}
     #donnar-list li:nth-child(even) {background:#fff;border-bottom:1px solid #CCC}
-    
-    /*Loader*/
-    .km-loader .km-loading{animation: km-spin 1s infinite linear;-webkit-animation: km-spin 1s infinite linear;display: block;margin: 0 auto;background-color: #fff !important;width: 62px;height: 62px;border-radius: 50%;}
-}
+ }
 
 @media (min-width:0px) and (max-width:410px) {
 }

@@ -52,11 +52,11 @@ app.signup = (function () {
             }
             else
             {
-                /*if(imageStatus === "style/images/profile icon.PNG")
+                if(imageStatus === "style/images/profile icon.PNG")
                 {
                     navigator.notification.alert("Please Capture your image", function () {}, "Notification", "OK");
                     return;
-                }*/
+                }
                 
                 if (bindingValue.signupUsername === "" || bindingValue.signupUsername === 'undefined' || bindingValue.signupUsername === undefined) {
                     navigator.notification.alert("Please enter your name", function (confirm) {
@@ -225,11 +225,13 @@ app.signup = (function () {
             app.everlive.Users.register(username, password, attrs,
             function (data)
             {
+                console.log(data);
                 if (data['result']['Id']) {
                     app.mobileApp.hideLoading();
                     $('#uploadimgbtn').attr("src",'style/images/profile icon.PNG');
+                    window.plugins.toast.show('Registration Successfull','long','bottom', onSuccess, onError);
                     sessionStorage.removeItem('image64Code');
-                    app.mobileApp.navigate("#loginView");
+                    app.mobileApp.navigate("views/home.html");
                 }
             },
             function (error)
@@ -258,6 +260,14 @@ app.signup = (function () {
                     alert(error['responseText']);
                 }
             });*/
+        };
+        
+        var onSuccess =  function(msg) {
+            console('Toast shown: ' + msg);
+        };
+
+        var onError =  function(msg) {
+            alert('Toast error: ' + msg);
         };
 
         var captureCameraEvent = function ()

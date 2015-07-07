@@ -3,10 +3,11 @@
 #loginView .logo {width:120px;height:100px;margin:0px auto;background:url('images/blood beta.png') no-repeat ;background-size:100% 100%;margin-top:10%}
 
 /*forgot password*/
-#forgot-pwd .forgot-frm .forgot-btn,#signup-view .signup-ftr .signup-btn {width:48%;background-color:#EEEEEE;border:1px solid #CBCAC8;color:#000;font-family:'Times New Roman', Times, serif;}
-#forgot-pwd .forgot-frm .forgot-btn:active,#signup-view .signup-ftr .signup-btn:active {color:#000}
-#forgot-pwd .forgot-frm .forgot-btnActive,#signup-view .signup-ftr .signup-btnActive {width:48%;background-color:#CD070F;border:1px solid #CBCAC8;color:#fff;font-family:'Times New Roman', Times, serif}
-#forgot-pwd .forgot-frm .forgot-btnActive:active, #signup-view .signup-frm .signup-btnActive:active {color:#fff}
+#forgot-pwd .forgot-ftr .forgot-btn,#signup-view .signup-ftr .signup-btn {width:48%;background-color:#EEEEEE;border:1px solid #CBCAC8;color:#000;font-family:'Times New Roman', Times, serif;}
+#forgot-pwd .forgot-ftr .forgot-btn:active,#signup-view .signup-ftr .signup-btn:active {color:#000}
+#forgot-pwd .forgot-ftr .forgot-btnActive,#signup-view .signup-ftr .signup-btnActive {width:48%;background-color:#CD070F;border:1px solid #CBCAC8;color:#fff;font-family:'Times New Roman', Times, serif}
+#forgot-pwd .forgot-ftr .forgot-btnActive:active, #signup-view .signup-frm .signup-btnActive:active {color:#fff;background-color:#CD070F !important;}
+#forgot-pwd .forgot-ftr p:nth-child(2) {margin-top:26%}
 .removeBtn {border: none !important;background: none !important;}
 .nvbar {background-color:#CD070F !important;height:52px !important}
 .settitle {color:#FFF !important;line-height: 50px;font-weight: bold;font-family:'Times New Roman', Times, serif}
@@ -16,10 +17,9 @@ select {background:#FFF !important}
 
 /***********************************Loader**************************************/
 .km-loader {background:#181414 !important}
-.km-loading {border-color: #CD070F rgba(255,255,255,0.2);box-shadow: 0 1px 0 rgba(0,0,0,0.1),0 -1px 0 rgba(0,0,0,0.1),inset 0 1px 0 rgba(0,0,0,0.1),inset 0 -1px 0 rgba(0,0,0,0.1);}
+/*.km-loading {border-color: #CD070F rgba(255,255,255,0.2);box-shadow: 0 1px 0 rgba(0,0,0,0.1),0 -1px 0 rgba(0,0,0,0.1),inset 0 1px 0 rgba(0,0,0,0.1),inset 0 -1px 0 rgba(0,0,0,0.1);}
 .km-loading {font-size: 1.8rem;line-height: 1em;vertical-align: middle;text-align: center;display: inline-block;position: absolute !important;top:45% !important;left: 42% !important;border-style: solid;border-width: 11px;box-shadow: -1px 0px -1px 10px #D68C8C}
-.km-flat .km-loader>*:not(h1) {background:#fff !important}
-
-.km-flat .km-rowinsert, .km-flat .km-state-active, .km-flat .km-scroller-pull, .km-flat .km-loader:before, .km-flat .k-slider-selection, .km-flat .km-touch-scrollbar, .km-flat .km-pages .km-current-page, .km-flat .k-slider .k-draghandle, .km-flat .k-slider .k-draghandle:hover, .km-flat .km-tabstrip .km-state-active, .km-flat .km-scroller-refresh.km-load-more, .km-flat .km-popup .k-state-hover, .km-flat .km-popup .k-state-focused, .km-flat .km-popup .k-state-selected, .km-flat .km-actionsheet>li>a:active, .km-flat .km-actionsheet>li>a:hover, .km-flat li.km-state-active .km-listview-link, .km-flat li.km-state-active .km-listview-label, .km-flat .km-listview-label input[type=radio]:checked, .km-flat .km-listview-label input[type=checkbox]:checked {
-background: none !important;
+*/.km-flat .km-loader>*:not(h1) {background: #CD070F !important;}
+ .km-flat .km-loader:before {
+    background-color:#fff !important
 }

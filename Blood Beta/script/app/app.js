@@ -66,7 +66,7 @@ var app = (function(global){
     
     /*Initialize the everlive sdk*/
     var el = new Everlive({
-        apiKey: 'a21GgIUlEwSME2mR',
+        apiKey: 'rsSvQnPLv6ep1Exv',
         scheme:'https'
     });
     
